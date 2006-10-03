@@ -1,0 +1,17 @@
+.cvsignore
+Build.PL
+Changes
+lib/Sledge/Plugin/DI.pm
+Makefile.PL
+MANIFEST
+META.yml			# Will be created by "make dist"
+README
+t/00.load.t
+t/Config.pm
+t/Module/A.pm
+t/Module/B.pm
+t/Module/C.pm
+t/pod-coverage.t
+t/pod.t
+t/run.t
+t/TestDI.pm
