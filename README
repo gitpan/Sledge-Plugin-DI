@@ -1,47 +1,27 @@
-Sledge-Plugin-DI version 0.0.1
-
-[ REPLACE THIS...
-
-  The README is used to introduce the module and provide instructions on
-  how to install the module, any machine dependencies it may have (for
-  example C compilers and installed libraries) and any other information
-  that should be understood before the module is installed.
-
-  A README file is required for CPAN modules since CPAN extracts the
-  README file from a module distribution so that people browsing the
-  archive can use it get an idea of the modules uses. It is usually a
-  good idea to provide version information here so that people can
-  decide whether fixes for the module are worth downloading.
-]
-
+This is Perl module Sledge::Plugin::DI.
 
 INSTALLATION
 
-To install this module, run the following commands:
+Sledge::Plugin::DI installation is straightforward. If your CPAN shell is set up,
+you should just be able to do
 
-    perl Makefile.PL
-    make
-    make test
-    make install
+    % cpan Sledge::Plugin::DI
 
+Download it, unpack it, then build it as per the usual:
 
-Alternatively, to install with Module::Build, you can use the following commands:
+    % perl Makefile.PL
+    % make && make test
 
-    perl Build.PL
-    ./Build
-    ./Build test
-    ./Build install
+Then install it:
 
+    % make install
 
+DOCUMENTATION
 
-DEPENDENCIES
+Sledge::Plugin::DI documentation is available as in POD. So you can do:
 
-None.
+    % perldoc Sledge::Plugin::DI
 
+to read the documentation online with your favorite pager.
 
-COPYRIGHT AND LICENCE
-
-Copyright (C) 2006, Tokuhiro Matsuno
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+Tokuhiro Matsuno

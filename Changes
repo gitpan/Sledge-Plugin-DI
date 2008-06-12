@@ -1,5 +1,10 @@
 Revision history for Sledge-Plugin-DI
 
+0.0.2
+
+    - updated package structure to 2008 style.
+    - some tests moved to xt/
+
 0.0.1  Mon Oct  2 22:23:46 2006
        Initial release.
 

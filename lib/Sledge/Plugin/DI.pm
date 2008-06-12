@@ -1,7 +1,7 @@
 package Sledge::Plugin::DI;
 use warnings;
 use strict;
-use version; our $VERSION = qv('0.0.1');
+our $VERSION = '0.0.2';
 use Carp;
 use UNIVERSAL::require;
 
@@ -45,12 +45,13 @@ sub _require_with_package {
     my ($class, $package, $load) = @_;
 
     # FIXME: (do you know more smart way?)
+    ## no critic.
     eval qq/
         {
             package $package;
             use $load;
         }
-    /; ## no critic
+    /;
 
     die $@ if $@;
 }
@@ -98,7 +99,7 @@ You can easily to injection the dependency.
 
 Tokuhiro Matsuno  C<< <tokuhiro __at__ mobilefactory.jp> >>
 
-=head1 LICENCE AND COPYRIGHT
+=head1 LICENSE AND COPYRIGHT
 
 Copyright (c) 2006, Tokuhiro Matsuno C<< <tokuhiro __at__ mobilefactory.jp> >>. All rights reserved.
 
